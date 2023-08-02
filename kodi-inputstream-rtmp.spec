@@ -4,7 +4,7 @@
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 Version:        20.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RTMP inputstream addon for Kodi
 
 License:        GPL-2.0-or-later
@@ -55,5 +55,8 @@ appstream-util validate-relax --nonet $RPM_BUILD_ROOT%{_metainfodir}/%{name}.met
 
 
 %changelog
+* Wed Aug 02 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 20.3.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
+
 * Sun Jan 29 2023 Mohamed El Morabity <melmorabity@fedoraproject.org> - 20.3.0-1
 - Initial RPM release (based on RPM Fusion package)
