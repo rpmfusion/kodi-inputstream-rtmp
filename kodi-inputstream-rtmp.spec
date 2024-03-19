@@ -1,10 +1,10 @@
 %global kodi_addon inputstream.rtmp
-%global kodi_version 20
-%global kodi_codename Nexus
+%global kodi_version 21
+%global kodi_codename Omega
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        20.3.0
-Release:        3%{?dist}
+Version:        21.1.0
+Release:        1%{?dist}
 Summary:        RTMP inputstream addon for Kodi
 
 License:        GPL-2.0-or-later
@@ -55,6 +55,9 @@ appstream-util validate-relax --nonet $RPM_BUILD_ROOT%{_metainfodir}/%{name}.met
 
 
 %changelog
+* Thu Mar 14 2024 Mohamed El Morabity <melmorabity@fedoraproject.org> - 21.1.0-1
+- Update to 21.1.0
+
 * Sat Feb 03 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 20.3.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_40_Mass_Rebuild
 
