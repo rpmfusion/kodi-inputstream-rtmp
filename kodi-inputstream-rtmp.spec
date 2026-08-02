@@ -4,7 +4,7 @@
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 Version:        22.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RTMP inputstream addon for Kodi
 
 License:        GPL-2.0-or-later
@@ -55,6 +55,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 
 
 %changelog
+* Sun Aug 02 2026 RPM Fusion Release Engineering <leigh123linux@rpmfusion.org> - 22.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_45_Mass_Rebuild
+
 * Tue Jun 30 2026 Leigh Scott <leigh123linux@gmail.com> - 22.0.0-1
 - Update for kodi 22
 
